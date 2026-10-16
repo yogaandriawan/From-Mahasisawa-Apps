@@ -43,11 +43,6 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 
-/**
- * Parent STATEFUL: mengelola state menggunakan remember + mutableStateOf.
- * Event onValueChange/onClick HANYA memperbarui state, bukan mengubah View manual.
- * Compose otomatis melakukan recomposition atas UI yang membaca state tersebut.
- */
 @Composable
 fun StudentProfileScreen() {
     var name by remember { mutableStateOf("") }
@@ -112,7 +107,7 @@ private fun StudentProfileContent(
     ) {
         Column(verticalArrangement = Arrangement.spacedBy(5.dp)) {
             Text(
-                text = "PRAKTIKUM 04 • JETPACK COMPOSE",
+                text = "DWI YOGA ANDRIAWAN",
                 style = MaterialTheme.typography.labelMedium,
                 color = MaterialTheme.colorScheme.primary,
                 fontWeight = FontWeight.Bold
