@@ -54,15 +54,15 @@ FormProfilMahasiswa/
 
 ### Menjalankan di Windows
 
-1. Ekstrak project ZIP dan buka direktori project di Android Studio: **File → Open → FormProfilMahasiswa**.
-2. Pastikan Android SDK 35 tersedia (**SDK Manager**) dan **Gradle JDK** terkonfigurasi.
-3. Dari Terminal di direktori project, jalankan:
+1. Ekstrak project ZIP. **Sebelum membuka Android Studio untuk Sync**, buka terminal/PowerShell di folder `FormProfilMahasiswa`.
+2. Jalankan bootstrap wrapper berikut sekali (butuh koneksi internet):
 
    ```powershell
    .\gradlew.bat --version
    ```
 
-4. Klik **Sync Project with Gradle Files** dan tunggu dependency selesai.
+3. Buka direktori project di Android Studio: **File → Open → FormProfilMahasiswa**.
+4. Pastikan Android SDK 35 tersedia (**SDK Manager**) dan **Gradle JDK** terkonfigurasi. Klik **Sync Project with Gradle Files** dan tunggu dependency selesai.
 5. Pilih emulator/perangkat lalu tekan **Run 'app'**.
 
 ### Menjalankan di Linux / macOS
@@ -114,7 +114,7 @@ Jika tinggi layar tidak muat seluruh kartu, gulir hingga terlihat bagian yang me
 
 ## Pengumpulan ke GitHub
 
-Project ini memiliki **3 commit lokal** bermakna (inisialisasi, implementasi, dokumentasi/test). Riwayat git ikut berada dalam ZIP. Setelah ekstrak, buka terminal di folder project dan jalankan:
+Project ini memiliki **minimal 3 commit lokal** bermakna (inisialisasi, implementasi, dokumentasi/test). Riwayat git ikut berada dalam ZIP. Setelah ekstrak, buka terminal di folder project dan jalankan:
 
 ```bash
 # Ganti URL berikut dengan repository kosong yang Anda buat di GitHub.
